@@ -1,0 +1,76 @@
+/** Exports to ../css/style.css **/
+@import '_reset';
+
+/** Foundation **/
+@import 'foundation/_foundation';
+@import 'foundation/_global';
+@include foundation-everything;
+
+body {
+    background-color: #202a38;
+    font-family: 'niveau-grotesk', sans-serif;
+}
+
+$teal: #3583cc;
+$teal-dark: #008894;
+$purple: #d73981;
+$purple-dark: #5550c8;
+$black: #161e20;
+
+.main-area {
+    background-color: #FFF;
+}
+
+svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: currentColor;
+}
+
+/** Elements **/
+@import 'elements/_header';
+@import 'elements/_footer';
+@import 'elements/_listings';
+@import 'elements/_homebanner';
+@import 'elements/_mobilemenu';
+@import 'elements/_homebits';
+@import 'plugins/_wallop';
+@import 'plugins/_slick';
+
+@import 'elements/_breadcrumbs';
+@import 'elements/_content';
+@import 'elements/_form';
+@import 'elements/_sidebarnav';
+
+.visually-hide {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.desktop-clear {
+  clear: both;
+}
+
+a.grad-button {
+  display: inline-block;
+  padding: 16px 20px;
+  background: linear-gradient(45deg, #e05896 0%, #3583cc 100%);
+  color: #FFF !important;
+  text-decoration: none;
+  font-size: 1.25em;
+  margin: 1em 0;
+  text-decoration: none !important;
+}

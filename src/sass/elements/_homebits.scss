@@ -1,0 +1,226 @@
+/* Home accordion */
+.home-accordion {
+
+}
+
+.home-accordion .title-bar {
+  padding: 32px 0;
+  position: relative;
+  background: linear-gradient(to top, #FFFFFF 0%, #EFEFEF 100%);
+}
+
+.home-accordion .title-bar h2 {
+  padding: 10px 0;
+  font-size: 24px;
+  line-height: 24px;
+  float: left;
+  color: #202a38;
+}
+
+.home-accordion .title-bar h2 a {
+  text-decoration: none;
+  color: $purple;
+}
+
+.home-accordion .title-bar a.button {
+  display: block;
+  padding: 10px 16px;
+  // font-weight: bold;
+  line-height: 24px;
+  color: $teal;
+  background-color: $purple;
+  color: #FFF;
+  text-decoration: none;
+  float: right;
+
+  &:hover {
+    background-color: $teal;
+  }
+}
+
+.home-accordion a.accordion-element {
+  display: block;
+  background-color: #ccc;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-accordion a.accordion-element img {
+  display: block;
+  width: 100%;
+}
+
+.home-accordion a.accordion-element .overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding: 30px;
+  color: #FFF;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  background: linear-gradient(to bottom, rgba(#000,0) 0%, rgba(#000,0.5) 100%);
+
+  transition: 0.5s all ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.home-accordion a.accordion-element .name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-accordion a.accordion-element .sub {
+
+}
+
+.home-accordion a.accordion-element:hover .overlay {
+  bottom: 0px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.home-accordion {
+	.slick-prev,
+	.slick-next {
+    position: absolute;
+    top: 0;
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.25);
+    transition: 0.5s all ease;
+    z-index: 3;
+
+    background-size: 25px, 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-indent: 105%;
+    overflow: hidden;
+    white-space: nowrap;
+	}
+	.slick-prev:hover,
+	.slick-next:hover {
+		background-color: $teal;
+	}
+	.slick-prev {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUwIDUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MCA1MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9DQo8L3N0eWxlPg0KPGc+DQoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE0LjMsMjVMMzAuMiw5LjFsNS42LDUuNUwyNS40LDI1bDEwLjQsMTAuNGwtNS42LDUuNUwxNC4zLDI1eiIvPg0KPC9nPg0KPC9zdmc+DQo=');
+	    left: 0;
+	}
+
+	.slick-next {
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDUwMS41IDUwMS41Ij48Zz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTk5LjMzIDQxMC42MjJsLTU1Ljc3LTU1LjUwOEwyNDcuNDI1IDI1MC43NSAxNDMuNTYgMTQ2LjM4NGw1NS43Ny01NS41MDdMMzU4LjQ0IDI1MC43NXoiLz48L2c+PC9zdmc+DQo=');
+	    right: 0;
+	}
+
+	// .next svg,
+	// .prev svg {
+	//     width: 25px;
+  // 		height: 50px;
+  // 		fill: #FFFFFF;
+  // 		display: block;
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 0;
+  //     margin-top: -25px;
+  //     left: 50%;
+  //     margin-left: -12.5px;
+	// }
+  //
+	// .prev:hover svg,
+	// .next:hover svg {
+	// 	// fill: $teal;
+	// }
+}
+
+
+
+/* Home Call to actions */
+.home {
+    padding: 5em 0;
+    background-color: #FFFFFF;
+}
+
+.home .image {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 30px 15px rgba(0,0,0,.1);
+
+  &:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(135deg, $purple 0%, $teal 100%);
+  }
+}
+
+.home-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a.homebit {
+    width: 33.333%;
+    display: block;
+    text-decoration: none;
+    padding: 60px 60px 60px 140px;
+    position: relative;
+    border-bottom: 1px solid #ced2d5;
+
+    &:nth-child(3n - 1),
+    &:nth-child(3n - 2)  {
+      border-right: 1px solid #ced2d5;
+    }
+}
+
+.homebit:hover {
+  background-color: #202a38;
+  color: #FFF;
+}
+
+.homebit .icon {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 60px;
+  height: 60px;
+
+  svg {
+    display: block;
+    width: 60px;
+    height: 60px;
+    fill: $teal;
+  }
+}
+
+.homebit:hover .icon svg {
+  fill: #FFF;
+}
+
+.homebit h3 {
+    // font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $purple;
+}
+
+.homebit:hover h3 {
+  color: #FFF;
+}
+
+.homebit p {
+    color: #6d7073;
+    font-size: 1.125em;
+    line-height: 1.6;
+}
+
+.homebit:hover p {
+  color: #FFF;
+}

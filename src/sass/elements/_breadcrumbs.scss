@@ -1,0 +1,54 @@
+.page-banner {
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+
+  color: #FFF;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page-banner .overlay {
+  background: linear-gradient(to bottom, rgba(#3e4a5a,0.75) 0%, rgba(#202a38,0.85) 100%);
+  padding: 5em 0;
+}
+
+.page-banner h1 {
+  font-size: 56px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.page-banner .break {
+	height: 2px;
+	width: 100px;
+	background-color: $teal;
+	background: linear-gradient(to right, $purple 0%, $teal 100%);
+	margin: 1.5em auto 0 auto;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  color: #3e4a5a;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  padding: 1em 0;
+  text-align: center;
+  background: #EFEFEF;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.breadcrumbs span {
+  opacity: 0.75;
+  margin: 0 10px;
+}
+
+.breadcrumbs a {
+  color: #3e4a5a;
+  text-decoration: none;
+
+  &:hover {
+	  color: $purple;
+  }
+}
