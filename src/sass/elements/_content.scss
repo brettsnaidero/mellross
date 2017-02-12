@@ -22,12 +22,22 @@ $header-colour: $teal;
 
     h1, h2, h3 {
         line-height: 1.2;
-    color: $header-colour;
+        color: $header-colour;
     }
 
     h4, h5, h6 {
         font-weight: 600;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+		// & + p {
+		// 	margin-top: $margin / 2;
+		// }
+        //
+		// &:first-child {
+		// 	margin-top: $margin / 2;
+		// }
+	}
 
     h1 {
         font-size: 2.5em;
@@ -262,6 +272,6 @@ $header-colour: $teal;
 
 @media screen and (min-width: 800px) {
   .mainstuff {
-    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }

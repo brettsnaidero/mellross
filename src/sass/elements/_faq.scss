@@ -1,0 +1,133 @@
+/* Tabs */
+.accordion .tab-controls:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.accordion .tab-controls li {
+  float: left;
+  margin: 0px 2px 2px 0px;
+}
+
+.accordion .tab-controls li button {
+  color: #FFF;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 16px;
+  padding: 1rem;
+  background: linear-gradient(to top, #202a38 0%, #3e4a5a 100%);
+}
+
+.accordion .tab-controls li.on button {
+	background: $teal;
+  color: #FFFFFF;
+}
+
+/* Accordion */
+.acc-ind .acc-content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.acc-ind.active .acc-content {
+  opacity: 1;
+  visibility: visible;
+  position: static;
+}
+
+/* Accordion Title */
+.acc-title button {
+  border-top: 2px solid #FFF;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 16px;
+  padding: 1rem;
+  background: linear-gradient(to top, #202a38 0%, #3e4a5a 100%);
+  color: #FFF;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+
+.acc-title button .icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -10px;
+  transition: 0.5s all ease;
+  transform: rotate(0deg);
+}
+
+.acc-title button .icon span:first-child {
+  height: 2px;
+  width: 20px;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -10px;
+}
+
+.acc-title button .icon span:last-child {
+  height: 20px;
+  width: 2px;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -1px;
+}
+
+.acc-ind.active .acc-title button {
+  background: $teal;
+  color: #FFFFFF;
+}
+
+.acc-ind.active .acc-title button .icon {
+  transform: rotate(45deg);
+}
+
+/* FAQ */
+.faq {
+  margin: 10px 0;
+  margin: 0.75rem 0;
+}
+
+.faq ul.tab-controls {
+  display: none;
+}
+
+/* Property Tab */
+.property-tabs {
+  margin: 10px 0;
+  margin: 0.75rem 0;
+}
+
+.property-tabs .acc-title {
+  display: none;
+}
+
+.property-tabs .acc-content {
+  padding: 10px 30px;
+  background-color: #EFEFEF;
+}
+
+.property-tabs form {
+  padding: 0;
+  border: none;
+  background: none;
+
+  h1, h2, h3, h4, h5, h6 {
+    border-bottom: 1px solid #9FAFBA;
+  }
+  input[type="reset"] {
+    background: linear-gradient(to top, #202a38 0%, #3e4a5a 100%);
+    color: #FFF;
+  }
+}

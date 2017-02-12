@@ -25,13 +25,12 @@
 
 /* Home Slider */
 .slide {
-	padding-top: 35%;
 	position: relative;
 	background-color: #EFEFEF;
 }
 
 .home-banner .slide {
-	padding-top: 50%;
+	height: 480px;
 	position: relative;
 	background-size: cover;
 	background-position: center;
@@ -42,6 +41,13 @@
     flex-direction: column;
     justify-content: flex-end;
   }
+}
+
+@media screen and (min-width: 1600px) {
+	.home-banner .slide {
+		padding: 0;
+		height: 800px;
+	}
 }
 
 .slide .overlay {
@@ -59,11 +65,11 @@
 @keyframes show {
 	0% {
 		opacity: 0;
-		transform: translateX(-50px);
+		transform: translateY(50px);
 	}
 	100% {
 		opacity: 1;
-		transform: translateX(0px);
+		transform: translateY(0px);
 	}
 }
 
@@ -147,5 +153,27 @@
 	.prev:hover svg,
 	.next:hover svg {
 		// fill: $teal;
+	}
+}
+
+@media screen and (max-width: 56em) {
+	.slide .caption h2 {
+	    font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.home-banner .slide {
+		padding: 0;
+		height: 320px;
+	}
+	.slide .caption {
+		padding: 2rem 0;
+	}
+	.slide .caption h2 {
+	    font-size: 2rem;
+	}
+	.slide .caption p {
+		font-size: 1rem;
 	}
 }

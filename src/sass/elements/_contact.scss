@@ -1,0 +1,46 @@
+.offices {
+
+}
+
+.offices .office li {
+  position: relative;
+  padding-left: 40px;
+
+  color: #6d7073;
+  font-size: 1.125em;
+  line-height: 1.6;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.offices .office li .icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  fill: #bcbec1;
+}
+
+.offices .office li a {
+  color: $purple;
+  text-decoration: none;
+  word-break: break-all;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+.map {
+  height: 360px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+.map-marker {
+	width: 60px;
+	height: 85px;
+	background: url('../img/marker.svg');
+}

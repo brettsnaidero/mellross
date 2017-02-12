@@ -10,11 +10,12 @@
 
 .page-banner .overlay {
   background: linear-gradient(to bottom, rgba(#3e4a5a,0.75) 0%, rgba(#202a38,0.85) 100%);
-  padding: 5em 0;
+  padding: 4em 0;
 }
 
 .page-banner h1 {
-  font-size: 56px;
+  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.15;
   margin: 0;
 }
@@ -24,7 +25,7 @@
 	width: 100px;
 	background-color: $teal;
 	background: linear-gradient(to right, $purple 0%, $teal 100%);
-	margin: 1.5em auto 0 auto;
+	margin: 1em auto 0 auto;
 }
 
 /* Breadcrumbs */
@@ -32,7 +33,7 @@
   color: #3e4a5a;
   text-transform: uppercase;
   letter-spacing: 0.015em;
-  padding: 1em 0;
+  padding: 0.75em 0;
   text-align: center;
   background: #EFEFEF;
   font-size: 12px;

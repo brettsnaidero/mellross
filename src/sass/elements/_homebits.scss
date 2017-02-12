@@ -148,6 +148,7 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 0 30px 15px rgba(0,0,0,.1);
+  margin: 40px 20px 20px 0;
 
   &:before {
     content: '';
@@ -158,6 +159,12 @@
     width: 75%;
     height: 100%;
     background: linear-gradient(135deg, $purple 0%, $teal 100%);
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .home {
+    padding: 2em 0;
   }
 }
 
@@ -177,6 +184,31 @@ a.homebit {
     &:nth-child(3n - 1),
     &:nth-child(3n - 2)  {
       border-right: 1px solid #ced2d5;
+    }
+}
+
+@media screen and (max-width: 64em) {
+    a.homebit {
+        width: 50%;
+
+        &:nth-child(3n - 1),
+        &:nth-child(3n - 2)  {
+          border-right: none;
+        }
+
+        &:nth-child(2n-1) {
+          border-right: 1px solid #ced2d5;
+        }
+    }
+}
+
+@media screen and (max-width: 48em) {
+    a.homebit {
+        width: 100%;
+
+        &:nth-child(2n-1) {
+          border-right: none;
+        }
     }
 }
 

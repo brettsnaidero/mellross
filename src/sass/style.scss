@@ -11,11 +11,21 @@ body {
     font-family: 'niveau-grotesk', sans-serif;
 }
 
+.column:last-child:not(:first-child),
+.columns:last-child:not(:first-child) {
+    float: left;
+}
+
 $teal: #3583cc;
 $teal-dark: #008894;
 $purple: #d73981;
 $purple-dark: #5550c8;
 $black: #161e20;
+
+::selection {
+	background: $purple;
+	color: #FFF;
+}
 
 .main-area {
     background-color: #FFF;
@@ -37,11 +47,19 @@ svg {
 @import 'elements/_homebits';
 @import 'plugins/_wallop';
 @import 'plugins/_slick';
+@import 'elements/_property';
+@import 'elements/_search';
+@import 'elements/_contact';
+@import 'elements/_resources';
+@import 'elements/_banners';
+@import 'elements/_clientarea';
 
 @import 'elements/_breadcrumbs';
 @import 'elements/_content';
 @import 'elements/_form';
 @import 'elements/_sidebarnav';
+@import 'elements/_faq';
+@import 'elements/_pagination';
 
 .visually-hide {
     position: absolute;

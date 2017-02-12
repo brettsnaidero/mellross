@@ -1,0 +1,43 @@
+.prompt {
+  margin: 10px 0px;
+  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
+  margin: 12px 0px;
+  margin: 0.75rem 0rem;
+  background: #E3EFF2;
+  border: 1px solid #ABC3CA;
+  color: rgb(4, 70, 111);
+  border-radius: 5px;
+  font-size: 20px;
+  font-size: 1.25rem;
+
+  p {
+    margin: 10px 0px;
+  }
+}
+
+.client-area {
+  form select, form input[type="text"], form input[type="password"], form input[type="email"], form input[type="tel"], form input[type="file"], form textarea {
+    border: 1px solid darken($teal, 50%);
+  }
+  form input[type="submit"], form input[type="button"], form button {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
+    background: $purple;
+    min-width: 0px;
+  }
+}
+
+.client-area form {
+  margin: 10px 0px;
+  border: none;
+  background: linear-gradient(to top, #202a38 0%, #3e4a5a 100%);
+
+  h1, h2, h3, h4, h5, h6, label, p {
+    color: #FFFFFF;
+  }
+}

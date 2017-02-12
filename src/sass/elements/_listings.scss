@@ -1,3 +1,59 @@
+.category-listing {
+}
+
+.category-listing .category {
+	margin: 1rem 0;
+	position: relative;
+}
+
+.category-listing .category a {
+	display: block;
+	position: relative;
+	text-decoration: none;
+	transition: 0.5s all ease;
+	opacity: 1;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,.5);
+  }
+}
+
+.category-listing .category a:hover,
+.category-listing .category a:focus {
+	opacity: 0.75;
+}
+
+.category-listing .category img {
+	display: block;
+}
+
+.category-listing .category .text {
+	display: block;
+	text-decoration: none;
+  padding: 32px;
+	padding: 2rem;
+	color: #222;
+  border: 1px solid #CCC;
+  border-top: none;
+}
+
+.category-listing .category .title {
+	font-weight: bold;
+  font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	height: 4rem;
+  color: $teal;
+}
+
+@media screen and (max-width: 40em) {
+  .category-listing .category .title {
+    height: auto; 
+  }
+}
+
+/* Listings */
 .listings {
   background-color: #FFF;
   padding: 3em 0;
@@ -61,7 +117,8 @@ a.listing .title {
 }
 
 a.listing .sub {
-    border: 1px solid rgba(0,0,0,.06);
+    border: 1px solid #CCC;
+    border-top: none;
 }
 
 a.listing .property-info {
@@ -83,7 +140,7 @@ a.listing .sub .details {
   margin-top: 1.25em;
   color: #162a48;
   padding: 20px;
-  border-top: 1px solid rgba(0,0,0,.06);
+  border-top: 1px solid #CCC;
 }
 
 a.listing .sub .details span {

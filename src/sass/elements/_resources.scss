@@ -1,0 +1,82 @@
+/* Resources */
+.resources .title {
+  color: $teal;
+  font-size: 1.675em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.resources .grid {
+  @include grid-row;
+  margin: 0 -15px;
+  margin: 0 -0.9375rem;
+}
+
+.resources .grid li {
+  @include grid-column(1 of 2);
+  margin: 0.9375rem 0;
+}
+
+.resources .grid li:last-child:not(:first-child) {
+    float: left;
+}
+
+.resources {
+  margin: 16px 0;
+	margin: 1em 0;
+
+	li {
+		a {
+			display: block;
+			background: #FFFFFF;
+			border: 1px solid #DFE3E5;
+			color: #5d6d74;
+			line-height: 1.6;
+			padding: 20px 20px 20px 112px;
+			position: relative;
+			min-height: 120px;
+      text-decoration: none;
+
+			.title {
+        font-size: 18px;
+				font-size: 1.125em;
+				font-weight: bold;
+				color: $teal;
+				line-height: 1.25em;
+				margin: 0px 0px 4px 0px;
+				word-wrap: break-word;
+			}
+
+			&:hover {
+				text-decoration: none;
+				background-color: $purple;
+				border: 1px solid $teal;
+				color: #FFFFFF;
+
+				.title {
+					color: #FFFFFF;
+				}
+			}
+
+			.icon {
+				height: 80px;
+				width: 72px;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				background-image: url('../img/files.png');
+				background-position: 0px 0px;
+			}
+		}
+	}
+
+	li.pdf a .icon { background-position: -72px; }
+	li.doc a .icon { background-position: -144px; }
+	li.xls a .icon { background-position: -216px; }
+	li.ppt a .icon { background-position: -288px; }
+	li.jpg a .icon { background-position: -360px; }
+	li.png a .icon { background-position: -432px; }
+	li.zip a .icon { background-position: -504px; }
+}
